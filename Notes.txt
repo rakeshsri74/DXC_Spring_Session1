@@ -1,0 +1,60 @@
+Introduction To Spring:
+	-Spring is a framework which is lightweight.
+	-Spring is popular non-standard open-source framework developed by Interface21 Inc.
+	-It aims to overcome the application problems by enabling the use of Simple java beans(POJOs) to implement
+	the business logic.
+	-Enables the developers to create and test application easily.
+	-Aims to minimize the dependency of application code on its framework.
+		class Draw{
+			public void paint(){
+				System.out.println("Paint");
+			}
+		}
+		class Triangle{
+			public void triangleDrawn(Draw draw)
+			{
+				draw.paint();
+			}
+		}
+		class Main{
+			public static void main(String[] args){
+				Draw d = new Draw();
+				Triangle t = new Triangle();
+				t.triangleDrawn(d);
+			}
+		}
+	-Enable the use of simplicity and ease of testability in standalone applications.
+
+Features of Spring:
+	1.Pluggability
+		-It allows you to associate and remove business layer objects with each other with the help of configuration files.
+		-Spring requires you to make changes in the XML configuration file and run the application again to take effect.
+	2.Dependency Injection
+		-It allows loose coupling by creating the business layer objects based on the description in spring configuration file.
+		-As a result, it eases the maintanance and the testing of an application.
+		-Dependency Injection is a fundamental aspect of the Spring framework, through which the Spring container "injects" objects into other
+		objects or "dependencies".Simply put, this allows for loose coupling of components andd moves the responsibility of managing
+		components onto the container.
+	3.Container
+		-The Spring framework is a container that holds all the application objects.
+		-It is responsible for managing the life cycle and configuration of all the application objects.
+		-The container creates objects,which are defined in configuration files,and associate them together.
+		-Spring IOC(Inversion Of Control's) is the mechanism to achieve loose-coupling between Object dependencies.To achieve loose coupling and
+		dynamic binding of the objects at runtime,objects dependencies are injected by other assembler objects.
+	4.AOP(Aspect Oriented Programming)
+		-Aspect Oriented Programming which is defined as modularization of the system-wide concerns,such as transaction management and security.
+	5.Lightweight
+		-Spring is a lightweight framework that makes easy to configure and create complex applications.
+		-It consists of several well-defined module,built upon the concept of DI and AOP.
+
+The Spring framework provide two type of container:
+	1.Bean Factory
+		-Is a simple container that provides support for DI.
+	2.Application Context
+		-Is built upon the concept of the bean factory container and provides other functionalities also such as easy integration with Spring AOP 		and also support for internationalization.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Spring JDBC:
+	
+
